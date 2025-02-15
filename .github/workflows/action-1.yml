@@ -1,0 +1,15 @@
+name: First Example Workflow
+on: push
+
+jobs:
+    first_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hola Message
+              run: echo "Hola Bhaiyoo!!"
+
+            - name: Listing the repo files
+              run: ls -lh
+
+            - name: Contents of readme
+              run: cat README.md
